@@ -1,0 +1,13 @@
+{
+  "model": "CatBoost",
+  "kaggle_public_score_displayed": 0.79186,
+  "previous_lr_public_score_displayed": 0.77511,
+  "displayed_score_improvement": 0.01675,
+  "stratified_outer_oof_accuracy": 0.8439955106621774,
+  "grouped_outer_oof_accuracy": 0.8114478114478114,
+  "validation_note": "Fixed-parameter CatBoost outer-fold OOF metrics from the internal 5x4 blend pipeline.",
+  "submission_rows": 418,
+  "predicted_survivors": 143,
+  "submission_sha256": "a1430b27beb42c1df95ddc99f73f901cb16481d663940518b1b56bda6272b4cd",
+  "score_note": "Kaggle may truncate displayed score decimals; hidden-test score is unknown."
+}
