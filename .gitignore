@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.matplotlib/
+.ipynb_checkpoints/
+.DS_Store
+__MACOSX/
+._*
+catboost_info/
+.env
+kaggle.json
+*.joblib
+*.zip
+
+# Kaggle competition data must be downloaded by each user.
+data/raw/*.csv
+
+# Rebuilt outputs are reproducible and should not replace the frozen result.
+outputs/*
+!outputs/.gitkeep

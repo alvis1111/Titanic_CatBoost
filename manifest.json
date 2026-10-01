@@ -1,0 +1,47 @@
+{
+  "package": "Titanic CatBoost GitHub Delivery",
+  "model": "CatBoost",
+  "public_score_displayed": 0.79186,
+  "previous_lr_public_score_displayed": 0.77511,
+  "validation": {
+    "stratified_outer_oof_accuracy": 0.8439955106621774,
+    "grouped_outer_oof_accuracy": 0.8114478114478114,
+    "note": "Fixed-parameter CatBoost outer-fold OOF metrics from the internal 5x4 blend pipeline; not guarantees of Kaggle hidden-test performance."
+  },
+  "python": "3.13.14",
+  "dependencies": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "catboost": "1.2.10"
+  },
+  "source_sha256": {
+    "train.csv": "4a437fde05fe5264e1701a7387ac6fb75393772ba38bb2c9c566405af5af4bd7",
+    "test.csv": "5c78320a80dc159b35c408363be46a5d93f078183d539db75ee42a796d6a4e95"
+  },
+  "feature_engineer": {
+    "ticket_prefix_min_count": 8,
+    "statistics_fit_on_training_rows_only": true
+  },
+  "model_parameters": {
+    "iterations": 500,
+    "depth": 5,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 5.0,
+    "random_strength": 0.5,
+    "bootstrap_type": "Bayesian",
+    "bagging_temperature": 0.5,
+    "loss_function": "Logloss",
+    "eval_metric": "Accuracy",
+    "random_seed": 90045,
+    "thread_count": 1
+  },
+  "decision_threshold": 0.5,
+  "frozen_submission": {
+    "path": "data/submission_catboost.csv",
+    "rows": 418,
+    "predicted_survivors": 143,
+    "sha256": "a1430b27beb42c1df95ddc99f73f901cb16481d663940518b1b56bda6272b4cd"
+  }
+}
